@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login y Menú</title>
+  <!-- Favicon -->
+  <link rel="icon" href="https://i.pinimg.com/736x/b1/4a/90/b14a90c52ddca2d9fd1ddc2d3fc08f40.jpg" type="image/jpeg">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://wallpapers.com/images/high/dragon-ball-black-and-white-1920-x-1080-vpurefejkf25tmtc.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .iconos-redes img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .contenedor-inicio {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      padding: 50px;
+      background-color: rgba(255, 255, 255, 0.95);
+      margin: 50px auto;
+      width: 80%;
+      max-width: 1000px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      border-radius: 10px;
+      border: 4px solid black;
+    }
+
+    .seccion-inicio {
+      flex: 1;
+      border-left: 2px solid black;
+      padding-left: 30px;
+    }
+
+    .seccion-inicio:first-of-type {
+      border-left: none;
+      padding-left: 0;
+      padding-right: 30px;
+    }
+
+    .seccion-inicio h3 {
+      margin-bottom: 20px;
+      border-bottom: 2px solid black;
+      padding-bottom: 10px;
+    }
+
+    .boton-red {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: black;
+      color: white;
+      padding: 12px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      border: 2px solid black;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    .boton-red img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .entrada-formulario {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: #e8e8e8;
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+
+    .olvido {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .boton-correo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      color: white;
+      padding: 12px;
+      font-weight: bold;
+      border: 2px solid black;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .boton-correo::before {
+      content: "✉️";
+      margin-right: 10px;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.9);
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú de navegación semántico -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Inicio.html">🎮 Informacion</a></li>
+        <li><a href="Noticias.html">📰 Noticias</a></li>
+        <li><a href="Empresa.html">🏢 Empresa</a></li>
+        <li><a href="Pelicula.html">🎥 Pelicula</a></li>
+      </ul>
+      <ul class="iconos-redes d-flex gap-3">
+        <li><img src="https://library.maastrichtuniversity.nl/wp-content/uploads/google-e1700567735289.png" alt="Google"></li>
+        <li><img src="https://cdn2.downdetector.com/static/uploads/c/300/f0d8e/FB-f-Logo__blue_512.png" alt="Facebook"></li>
+        <li><img src="https://cdn.worldvectorlogo.com/logos/twitter-logo-2.svg" alt="Twitter"></li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg" alt="Apple"></li>
+        <li><img src="https://images.icon-icons.com/836/PNG/512/Instagram_icon-icons.com_66804.png" alt="Apple"></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección principal de inicio de sesión -->
+  <main>
+    <section class="contenedor-inicio">
+      <section class="seccion-inicio">
+        <h3>Inicie sesión con la Cuenta de Redes Sociales</h3>
+
+        <button class="boton-red">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Apple_logo_white.svg" alt="Apple">
+          Inicie sesión con Apple
+        </button>
+
+        <button class="boton-red">
+          <img src="https://cdn.worldvectorlogo.com/logos/twitter-logo-2.svg" alt="Twitter">
+          Inicie sesión con X
+        </button>
+
+        <button class="boton-red">
+          <img src="https://images.icon-icons.com/836/PNG/512/Instagram_icon-icons.com_66804.png" alt="Facebook">
+          Iniciar sesión con Instagram
+        </button>
+
+        <button class="boton-red">
+          <img src="https://cdn2.downdetector.com/static/uploads/c/300/f0d8e/FB-f-Logo__blue_512.png" alt="Facebook">
+          Iniciar sesión con Facebook
+        </button>
+
+        <button class="boton-red">
+          <img src="https://library.maastrichtuniversity.nl/wp-content/uploads/google-e1700567735289.png" alt="Google">
+          Iniciar sesión con Google
+        </button>
+      </section>
+
+      <section class="seccion-inicio">
+        <h3>Inicie sesión con Dirección de correo electrónico</h3>
+        <input type="email" class="entrada-formulario" placeholder="Introduzca la dirección de correo electrónico">
+        <input type="password" class="entrada-formulario" placeholder="Introduzca contraseña">
+        <p class="olvido">¿Olvidó su contraseña?</p>
+        <button class="boton-correo">Iniciar sesión</button>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Tu Sitio. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
